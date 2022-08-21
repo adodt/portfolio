@@ -26,7 +26,7 @@ header {
 }
 
 main {
-    width: 99%;
+    width: 100%;
     margin: 2rem auto; 
 }
 
@@ -70,7 +70,7 @@ nav ul a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 25vw;
     padding: 20px;
     background-color:#3440ad;
     
@@ -79,30 +79,36 @@ nav ul a:hover {
 
 h2 {
    font-family: 'Palatino';
-   font-size: 120px;
+   font-size: 8vw;
    color: var(--main-copy);
    text-align: left;
    margin-left: 50px;
 }
 
-.profile ul li {
+/*.profile ul li {
     margin-top: 25px;
-    margin-left: 50px;
+    text-align: left;
     font-size: 18px;
     color: var(--main-copy);
     font-style: 'Palatino';
-}
-
+} */
 
 .profile img {
-    margin: auto;
-    display: block;
-    float: right;
     position: relative;
-    width: 250px;
-    height: 250px;
+    margin: auto;
+    width: 22vw;
+    height: 22vw;
     border: solid 8px #fcd132;  
-} 
+
+}
+    /*position: relative;
+    margin: 40px;
+    float: right;
+    width: 15vw;
+    height: 15vw;
+    border: solid 8px #fcd132;  
+}*/
+
 
 .row {
     display: flex;
@@ -130,7 +136,6 @@ h2 {
     min-height: 100%;
     padding: 2rem;
     color: var(--main-copy);
-   
 }
 
 .box-header {
@@ -141,13 +146,6 @@ h2 {
     text-align: left;
     margin-left: 50px;
     height: 35px;
-}
-
-.box-body {
-    color: var(--main-copy);
-    float: left;
-    text-decoration: none;
-    font-family: 'Palatino'
 }
 
 p {
