@@ -1,3 +1,6 @@
+:root {
+    --main-copy: #E6DDD6;
+}
 * {
     /*box-sizing: border-box;*/
     padding: 0;
@@ -15,8 +18,16 @@ header {
     font-family: 'Palatino', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #3bb36b;
     font-size: 45px;
-    color: #E6DDD6;
+    color: var(--main-copy);
+    width: 100%;
+    height: 200px;
 
+
+}
+
+main {
+    width: 99%;
+    margin: 2rem auto; 
 }
 
 h1 {
@@ -31,7 +42,7 @@ nav ul {
 }
 
 nav ul a {
-    color: #d9dcd6;
+    color: var(--main-copy);
     padding: 25px;
     text-decoration: none;
     font-size: 18px;
@@ -46,12 +57,13 @@ nav ul a:hover {
 
 .hero {
     width: 100%;
-    height: 800px;
+    height: calc(100vw * .35);
     background-image: url(images/dodt-hero.jpeg);
     background-size: cover;
-    background-position: center; 
+    background-position: center center; 
     background-repeat: no-repeat;
 
+   
 }
 
 .profile {
@@ -62,12 +74,13 @@ nav ul a:hover {
     padding: 20px;
     background-color:#3440ad;
     
+    
 }
 
 h2 {
    font-family: 'Palatino';
-   color: #d9dcd6;
-   font-size: 145px;
+   font-size: 120px;
+   color: var(--main-copy);
    text-align: left;
    margin-left: 50px;
 }
@@ -76,7 +89,8 @@ h2 {
     margin-top: 25px;
     margin-left: 50px;
     font-size: 18px;
-    color: #d9dcd6;
+    color: var(--main-copy);
+    font-style: 'Palatino';
 }
 
 
@@ -87,10 +101,98 @@ h2 {
     position: relative;
     width: 250px;
     height: 250px;
-    border: solid 8px #fcd132;
-   
+    border: solid 8px #fcd132;  
+} 
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.portfolio {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    background-color: #de3c4c;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--main-copy);
+   
+}
+
+.box-header {
+    position: relative;
+    margin: -1rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 55px;
+    text-align: left;
+    margin-left: 50px;
+    height: 35px;
+}
+
+.box-body {
+    color: var(--main-copy);
+    float: left;
+    text-decoration: none;
+    font-family: 'Palatino'
+}
+
+p {
+    color: var(--main-copy);
+    float: left;
+    margin-left: 55px;
+    font-family: 'Palatino';
+}
+
+a {
+    color: var(--main-copy);
+    text-decoration: none;
+
+}
+a:hover {
+    color: #eb9936;
+}
+.current-projects {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    background-color: #3bb36b;
+}
+
+.contact-me {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    background-color: #eb9936;
 }
 
 
+@media screen and (min-width: 768px) {
+    .portfolio .current-projects .contact-me {
+    flex: 0 0 50%;
+    max-width: 50%;
 
+}
+}
+
+@media screen and (min-width: 992px) {
+
+    .portfolio .current-projects .contact-me {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+}
