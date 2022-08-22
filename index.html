@@ -12,61 +12,62 @@
 
 <body>
     <header>
-        <h1>Alli Dodt</h1>
-        <nav>
-            <ul>
-                <a href="#about-me">About Me</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#current-projects">Current Projects</a>
-            </ul>
-        </nav>    
+            <nav class="nav-1">
+                <a class="nav-1" href="#about-me">About Me</a>
+                <a class="nav-1" href="#portfolio">Portfolio</a>
+                <a class="nav-1"  href="#current-projects">Current Projects</a>
+            </nav>  
+            <h1>Alli Dodt
+            </h1>
     </header>
+          
 
     <div class="hero"></div>
 
     <main>
-        <section class= "profile" id="about-me">
-            <h2>Meet your new friend:</h2>
-                <!-- <ul>
+            
+            <div class= "profile" id="about-me">
+            <h2>Let's get creative:</h2>
+                <!--<img src="./assets/images/profile-pic.png">
+                    <ul>
                     <li>blah</li>
                     <li>blah</li>
-                    <li>blah</li>
+                    <li>blah</li> 
                 </ul> -->
-                <img src="./assets/images/profile-pic.png">
-
-        </section>
-
-        <section class="row justify-center">
-            <div class="portfolio" id="portfolio">
-                <figure class="box-1">
-                    <h3 class="box-header">Portfolio</h3>
-                        <p><a href="https://adodt.github.io/horiseon">Horiseon Social Marketing Solutions</a></p></div>
-                    </div>
-                </figure>
             </div>
 
-            <div class="current-projects" id="current-projects">
-                <figure class="box-1">
+        <section>
+            <div class="float-container">
+                <div class="float-child">
+                    <div class="portfolio" id="portfolio">
+                    <h3 class="box-header">Portfolio</h3>
+                        <p><a href="https://adodt.github.io/horiseon">Horiseon Social Marketing Solutions</a></p>
+                    
+                    </div>
+                </div>
+                <div class="float-child">
+                    <div class="current-projects" id="current-projects">
                     <h3 class="box-header">Projects</h3>
                     <p><a href="https://github.com/adodt">GitHub</a></p>
+                    
+                
                     </div>
-                </figure>
+                </div>
             </div>
 
-        <div class="contact-me">
-            <figure class="box-1">
+            <!-- <div class="contact-me">
                 <h3 class="box-header">Contact Me</h3>
                 <div classs="email-form">
                     <form action="/action_page.php">
                         <label for="email">Enter your email:</label>
                         <input type="email" id="email" name="email">
                         <input type="submit">
-                    </form>
+                    </form> 
                       
-                </div>
-            </figure>
-        </div>
+            </div> -->
+            
         </section>
+    
 
    
     </main>

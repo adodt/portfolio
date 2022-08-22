@@ -1,196 +1,88 @@
+
 :root {
-    --main-copy: #E6DDD6;
+    --main-copy: #6ea397;
+    --hover: #b5572d;
+    --font: 'Palatino'
 }
-* {
-    /*box-sizing: border-box;*/
-    padding: 0;
-    margin: 0;
-}
-
-/* update background-color to cream in hero image */
-
-body {
-    background-color: #d9dcd6;
-}
-
 header {
-    padding: 15px;
-    font-family: 'Palatino', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #3bb36b;
-    font-size: 45px;
-    color: var(--main-copy);
     width: 100%;
-    height: 200px;
-
-
-}
-
-main {
-    width: 100%;
-    margin: 2rem auto; 
+    height: 10%;
 }
 
 h1 {
-    margin-top: 20px;
-    margin-left: 50px;
-    text-align: left;
+    font-family: 'Palatino';
+    font-size: 70px;
+    color: #6ea397;
+    margin: auto;
 
 }
 
-nav ul {
-    text-align: right;
-}
-
-nav ul a {
+.nav-1 {
+    display: inline-block;
+    padding: 10px;
     color: var(--main-copy);
-    padding: 25px;
     text-decoration: none;
-    font-size: 18px;
-    font-family: 'Palatino', "Lucida Sans Unicode";
-
 }
 
-nav ul a:hover {
-    color: #f2d450;
-
+.nav-1:hover {
+color: var(--hover);
 }
 
 .hero {
     width: 100%;
-    height: calc(100vw * .35);
-    background-image: url(images/dodt-hero.jpeg);
+    height: calc(100vw * 0.28);
+    background-image: url(images/background-image.jpeg);
     background-size: cover;
     background-position: center center; 
     background-repeat: no-repeat;
-
-   
 }
 
 .profile {
-    display: flex;
-    justify-content: center;
+    padding: 10px;
     width: 100%;
-    height: 25vw;
-    padding: 20px;
-    background-color:#3440ad;
-    
-    
+    background-color: #244b60
 }
 
 h2 {
-   font-family: 'Palatino';
-   font-size: 8vw;
-   color: var(--main-copy);
-   text-align: left;
-   margin-left: 50px;
-}
-
-/*.profile ul li {
-    margin-top: 25px;
-    text-align: left;
-    font-size: 18px;
+    margin: auto;
     color: var(--main-copy);
-    font-style: 'Palatino';
-} */
+    font-family: var(--font);
+    font-size: 35px;
+}
 
 .profile img {
-    position: relative;
-    margin: auto;
-    width: 22vw;
-    height: 22vw;
-    border: solid 8px #fcd132;  
-
-}
-    /*position: relative;
-    margin: 40px;
+    width: 15%;
     float: right;
-    width: 15vw;
-    height: 15vw;
-    border: solid 8px #fcd132;  
-}*/
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
 }
 
-.justify-center {
-    justify-content: center;
+section {
+    font-family: Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.float-child {
+    margin: auto;
+    width: 48%;
+    float: left;
+    border: 5px solid white;
 }
 
 .portfolio {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    background-color: #de3c4c;
+    padding: 10px;
+    margin: auto;
+    background-color: #6ea397;
 }
 
-.box-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--main-copy);
-}
-
-.box-header {
-    position: relative;
-    margin: -1rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
-    font-size: 55px;
-    text-align: left;
-    margin-left: 50px;
-    height: 35px;
-}
-
-p {
-    color: var(--main-copy);
-    float: left;
-    margin-left: 55px;
-    font-family: 'Palatino';
-}
-
-a {
-    color: var(--main-copy);
-    text-decoration: none;
-
-}
-a:hover {
-    color: #eb9936;
-}
 .current-projects {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    background-color: #3bb36b;
+    padding: 10px;
+    background-color:#b8ccb6;
 }
 
 .contact-me {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    background-color: #eb9936;
+    background-color: #98c0b8;
 }
 
-
-@media screen and (min-width: 768px) {
-    .portfolio .current-projects .contact-me {
-    flex: 0 0 50%;
-    max-width: 50%;
-
-}
-}
-
-@media screen and (min-width: 992px) {
-
-    .portfolio .current-projects .contact-me {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
+footer {
+    float: left;
 
 }
