@@ -30,6 +30,7 @@ color: var(--hover);
 
 .hero {
     width: 100%;
+    min-height: 80px;
     height: calc(100vw * 0.28);
     background-image: url(images/background-image.jpeg);
     background-size: cover;
@@ -38,13 +39,12 @@ color: var(--hover);
 }
 
 .profile {
-    padding: 10px;
+    padding: 0;
     width: 100%;
     background-color: #244b60
 }
 
 h2 {
-    margin: auto;
     color: var(--main-copy);
     font-family: var(--font);
     font-size: 35px;
@@ -55,6 +55,30 @@ h2 {
     float: right;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.75;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #125688;
+    color: white;
+}
+
 section {
     font-family: Tahoma, sans-serif;
     text-decoration: none;
@@ -62,7 +86,7 @@ section {
 
 .float-child {
     margin: auto;
-    width: 48%;
+    width: 48vw;
     float: left;
     border: 5px solid white;
 }
@@ -71,11 +95,27 @@ section {
     padding: 10px;
     margin: auto;
     background-color: #6ea397;
+    color: whitesmoke;
+    border: 5px whitesmoke solid;
 }
 
 .current-projects {
     padding: 10px;
     background-color:#b8ccb6;
+    color: whitesmoke;
+    border: 5px whitesmoke solid;
+}
+
+.portfolio a, .current-projects a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.portfolio a:hover {
+    color: #244b60;
+}
+.current-projects a:hover {
+    color: #244b60;
 }
 
 .contact-me {
@@ -84,5 +124,6 @@ section {
 
 footer {
     float: left;
+    margin: 80px 20px;
 
 }
