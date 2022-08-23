@@ -1,4 +1,7 @@
-
+* {
+    padding: 0;
+    margin: 0;
+}
 :root {
     --main-copy: #6ea397;
     --hover: #b5572d;
@@ -11,7 +14,7 @@ header {
 
 h1 {
     font-family: 'Palatino';
-    font-size: 70px;
+    font-size: 4.3rem;
     color: #6ea397;
     margin: auto;
 
@@ -30,7 +33,7 @@ color: var(--hover);
 
 .hero {
     width: 100%;
-    min-height: 80px;
+    min-height: 5rem;
     height: calc(100vw * 0.28);
     background-image: url(images/background-image.jpeg);
     background-size: cover;
@@ -38,41 +41,48 @@ color: var(--hover);
     background-repeat: no-repeat;
 }
 
-.profile {
-    /*font bleeding into following div*/
+.profile-section {
+    min-height: 20vw;
     padding: 0;
     width: 100%;
-    height: 500px;
-    background-color: #244b60
+    height: 31rem;
+    background-color: #244b60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 h2 {
     color: var(--main-copy);
     font-family: var(--font);
     font-size: 50px;
     padding: 5px;
+    margin-left: 20px;
+    
 
 }
 
-.profile img {
-    width: 300px;
-    height: 300px;
+
+
+.profile-section img {
+    width: 19rem;
+    height: 19rem;
     border: 5px solid whitesmoke;
     border-radius: 50%;
-    margin: 15px;
+    margin-left: 15px;
     margin-bottom: 5px;
     float: left;
 
 }
 
 .fa {
-    margin: auto;
     padding: 20px;
     font-size: 30px;
     width: 35px;
     text-align: center;
     text-decoration: none;
-    /*margin: 5px 2px;*/
+    margin: 5px 2px;
     border-radius: 50%;
 }
 
@@ -96,6 +106,7 @@ h3 {
     color: whitesmoke;
     margin: auto;
     font-size: 1.9vmin;
+    padding: 10px;
 }
 
 section {
@@ -107,38 +118,54 @@ section {
 
 .float-child {
     margin: auto;
-    width: 48vw;
-    float: left;
-    border: 5px solid white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 .portfolio {
     padding: 10px;
-    margin: auto;
     background-color: #6ea397;
     color: whitesmoke;
     border: 5px whitesmoke solid;
+    width: 45%;
+    display: flex; 
+    flex-wrap: wrap;
+
 }
 
-.current-projects {
+.projects {
+    padding: 10px;
+    background-color: #6ea397;
+    color: whitesmoke;
+    border: 5px whitesmoke solid;
+    width: 45%;
+    display: flex; 
+    flex-wrap: wrap;
+
+}
+
+
+
+.float-current-projects {
     padding: 10px;
     background-color:#b8ccb6;
     color: whitesmoke;
     border: 5px whitesmoke solid;
+    width: 40%;
 }
 
-.portfolio a, .current-projects a {
+.portfolio a, .projects a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-.portfolio a:hover {
+.portfolio a:hover, .projects a:hover {
     color: #244b60;
 }
-.current-projects a:hover {
-    color: #244b60;
-}
+
 
 .contact-me {
     display: block;
