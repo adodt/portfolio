@@ -17,6 +17,7 @@ h1 {
     font-size: 4.3rem;
     color: #6ea397;
     margin: auto;
+    padding: 5px;
 
 }
 
@@ -31,6 +32,7 @@ h1 {
 color: var(--hover);
 }
 
+/* main banner photo */
 .hero {
     width: 100%;
     min-height: 5rem;
@@ -42,20 +44,19 @@ color: var(--hover);
   
 }
 
-
+/* profile including header, photo, social links, quote */
 .profile-section {
     max-width: 100%;
     min-height: 15vw;
     width: 100%;
-    height: 31rem;
+    height: 29rem;
     background-color: #244b60;
     display: flex;
     flex-direction: wrap;
-    align-items: stretch;
 
 }
 
-
+/* "Let's get creative */
 h2 {
     color: var(--main-copy);
     font-family: var(--font);
@@ -78,6 +79,7 @@ h2 {
 
 } 
 
+/* social media button (linkedin in, Instagram) */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -102,6 +104,7 @@ h2 {
     color: white;
 }
 
+/*profile quote*/
 h3 {
     color: whitesmoke;
     font-family: 'Tahoma';
@@ -112,13 +115,13 @@ h3 {
 
 }
 
-
+/* portfolio and project sections  */
 .float-child {
     width: 100%;
     display: flex;
     flex-wrap: row;
     flex-direction: row;
-    font-family: Tahoma, sans-serif;
+    font-family: 'Tahoma';
     text-decoration: none;
     justify-content: center;
     
@@ -187,9 +190,22 @@ footer {
     .profile-section {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
 
     }
 
-  
+    .fa {
+        margin-left: 0;
+        padding: 3px;
+        text-align: center;
+    }
+
+    h3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 10% 5% 10%;
+    font-size: small;
+    width: 100%;
+    }
   }
