@@ -195,6 +195,7 @@ footer {
     }
 
     .fa {
+        margin-top: 12px;
         margin-left: 0;
         padding: 3px;
         text-align: center;
@@ -205,7 +206,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 10% 5% 10%;
-    font-size: small;
+    font-size: medium;
     width: 100%;
     }
   }
