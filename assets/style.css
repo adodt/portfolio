@@ -185,6 +185,7 @@ footer {
 
 }
 
+/* aligning for smaller screens */
 @media screen and (max-width: 768px) {
     
     .profile-section {

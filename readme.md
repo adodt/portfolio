@@ -23,12 +23,12 @@
 
 <a id="github-repo"></a>
 
-### Github Repository: [horiseon-code-refactor](https://github.com/adodt/portfolio)
+### Github Repository: [portfolio](https://github.com/adodt/portfolio)
 
 #
 ### Screenshot 
 <div align="center">
-<img src="assets/images/Screenshot.png" width ="500px"/>
+<img src="assets/images/adodt-screenshot.png" width ="500px"/>
 </div>
 
 <a id="license"></a>
